@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #91cef7;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    background: #1e88e5;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    padding: 50px;
+    background: white;
+}
+
+.hero-left {
+    width: 50%;
+    padding: 30px;
+}
+
+.hero-left button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.hero-right img {
+    width: 400px;
+}
+
+/* OVERVIEW */
+.overview {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background: #e3f2fd;
+}
+
+.overview-box {
+    text-align: center;
+}
+
+/* BOOKING */
+.booking {
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+}
+
+.booking-left, .booking-right {
+    width: 50%;
+}
+
+.service {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* CART */
+.cart {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* QUALITY */
+.quality {
+    background: white;
+    padding: 40px;
+}
+
+.quality-grid {
+    display: flex;
+    gap: 20px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    padding: 40px;
+    background: #e3f2fd;
+    text-align: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #1e88e5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

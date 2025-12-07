@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundry Services Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ---------------- NAVBAR ---------------- -->
+    <nav class="navbar">
+        <div class="logo">LaundryWalla</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="Nitin Tiwari">Welcome, User</div>
+    </nav>
+
+
+    <!-- ---------------- HERO SECTION ---------------- -->
+    <section id="hero" class="hero">
+        <div class="hero-left">
+            <h1>Professional Laundry Service At Your Doorstep</h1>
+            <p>Fast, clean and affordable laundry services for your daily needs.</p>
+            <button id="scrollToBooking">Book a Service Today</button>
+        </div>
+
+        <div class="hero-right">
+            <img src="https://imgs.search.brave.com/EE2rXhpfrzBtQgBnNIAFYtKBWgxdBdJsu3PfNissw7g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODgx/MTc0OTUyL3Bob3Rv/L3BvcnRyYWl0LW9m/LXNtaWxpbmctbWF0/dXJlLWZlbWFsZS1k/cnktY2xlYW5lci1z/dGFuZGluZy1hdC1s/YXVuZHJvbWF0Lmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1a/a1pRejNQUjNzTHZH/VEZPb25vZUt5NXoy/TkhTcV9RNWRBaHU1/QUxhb3FzPQ" alt="Laundry Image">
+        </div>
+    </section>
+
+
+    <!-- ---------------- SERVICE OVERVIEW ---------------- -->
+    <section class="overview">
+        <div class="overview-box">
+            <h2>15+</h2>
+            <p>Laundry Services</p>
+        </div>
+        <div class="overview-box">
+            <h2>2400+</h2>
+            <p>Happy Customers</p>
+        </div>
+        <div class="overview-box">
+            <h2>2+</h2>
+            <p>Years of Experience</p>
+        </div>
+    </section>
+
+
+    <!-- ---------------- BOOKING SERVICES SECTION ---------------- -->
+    <section id="services" class="booking">
+
+        <!-- LEFT SIDE : All services list -->
+        <div class="booking-left">
+            <h2>Our Services</h2>
+            <div class="service" data-name="Shirt Wash" data-price="50">
+                <p>Shirt Wash - ₹50</p>
+                <button class="add">Add Item</button>
+                <button class="remove">Remove Now</button>
+            </div>
+
+            <div class="service" data-name="Pant Wash" data-price="70">
+                <p>Pant Wash - ₹70</p>
+                <button class="add">Add Item</button>
+                <button class="remove">Remove Now</button>
+            </div>
+
+            <div class="service" data-name="Dry Cleaning" data-price="120">
+                <p>Dry Cleaning - ₹120</p>
+                <button class="add">Add Item</button>
+                <button class="remove">Remove Now</button>
+            </div>
+
+            <p class="info">(Add items to the cart)</p>
+        </div>
+
+        <!-- RIGHT SIDE : Cart + Booking Form -->
+        <div class="booking-right">
+
+            <!-- CART -->
+            <div class="cart">
+                <h3>Added Items</h3>
+                <ul id="cartList"></ul>
+
+                <p class="total">Total Amount: ₹<span id="totalAmount">0</span></p>
+            </div>
+
+            <!-- BOOKING FORM -->
+            <div class="booking-form">
+                <h3>Book Now</h3>
+
+                <input id="name" type="text" placeholder="Full Name">
+                <input id="email" type="email" placeholder="Email">
+                <input id="phone" type="number" placeholder="Phone Number">
+
+                <button id="bookNow">Book Now</button>
+
+                <p id="thankYouMsg"></p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ---------------- QUALITY DESCRIPTION ---------------- -->
+    <section class="quality">
+        <h2>Why Choose Us?</h2>
+        
+        <div class="quality-grid">
+            <div class="q-item">Premium Services</div>
+            <div class="q-item">Quick Support</div>
+            <div class="q-item">Timely Delivery</div>
+            <div class="q-item">Affordable Prices</div>
+        </div>
+    </section>
+
+
+    <!-- ---------------- NEWSLETTER ---------------- -->
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+
+        <button>Subscribe</button>
+    </section>
+
+
+    <!-- ---------------- FOOTER ---------------- -->
+    <footer id="contact">
+        <div class="footer-logo">LaundryWalla</div>
+
+        <a href="#about">About Us</a>
+        <a href="#services">Important Links</a>
+        <a href="#contact">Contact Us</a>
+
+        <div class="social">
+            <span>🔵</span>
+            <span>🟣</span>
+            <span>🔴</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
