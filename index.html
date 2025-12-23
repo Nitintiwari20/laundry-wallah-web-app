@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundry Services Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="username-box">User name</div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-left">
+            <h1>Revitalize Your <br>
+                Clothes With Expert<br>
+                <span class="highlight">Laundry Services!</span>
+            </h1>
+
+            <p>From premium dry cleannig to swift wash and fold, we<br>
+                deliver care and convenience. Schedule a pickup and<br>
+                rediscover the freshness of your clothes today!
+            </p>
+
+            <button id="scrollToBooking">Book a Service Today!</button>
+        </div>
+
+        <div class="hero-right">
+            <img src="https://imgs.search.brave.com/EE2rXhpfrzBtQgBnNIAFYtKBWgxdBdJsu3PfNissw7g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODgx/MTc0OTUyL3Bob3Rv/L3BvcnRyYWl0LW9m/LXNtaWxpbmctbWF0/dXJlLWZlbWFsZS1k/cnktY2xlYW5lci1z/dGFuZGluZy1hdC1s/YXVuZHJvbWF0Lmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1a/a1pRejNQUjNzTHZH/VEZPb25vZUt5NXoy/TkhTcV9RNWRBaHU1/QUxhb3FzPQ" alt="Laundry Image">
+        </div>
+    </section>
+
+
+    <!--SERVICE OVERVIEW-->
+     
+    <section class="overview">
+        <h1>Our Achievements</h1>
+        <div class="overview-box">
+            <h2>15+</h2>
+            <p>Laundry Services</p>
+        </div>
+        <div class="overview-box">
+            <h2>2400+</h2>
+            <p>Happy Customers</p>
+        </div>
+        <div class="overview-box">
+            <h2>2+</h2>
+            <p>Years of Experience</p>
+        </div>
+    </section>
+
+<!-- service section -->
+    <section id="services" class="page-2">
+
+  <!-- LEFT -->
+  <div class="left-box">
+    <h2>Our Services</h2>
+    <p class="small-text">Click on the add to cart button to add the services to your cart</p>
+
+    <hr class="service-divider">
+    <div class="service-row" data-name="Dry Cleaning" data-price="200">
+      <span class="service-name">👕Dry Cleaning            <small>₹200.00</small></span>
+     <button class="toggle-btn">Add Item</button>
+    </div>
+
+    <div class="service-row" data-name="Wash & Fold" data-price="100">
+     <span class="service-name">👖Wash & Fold           <small>₹100.00</small></span>
+     <button class="toggle-btn">Add Item</button>
+    </div>
+
+    <div class="service-row" data-name="Ironing" data-price="50">
+     <span class="service-name">🩳Ironing            <small>₹50.00</small></span>
+     <button class="toggle-btn">Add Item</button>
+    </div>
+
+    <div class="service-row" data-name="Stain Removal" data-price="500">
+      <span class="service-name">🫟Stain Removal         <small>₹500.00</small></span>
+     <button class="toggle-btn">Add Item</button>
+    </div>
+
+    <div class="service-row" data-name="Leather & Suede Cleaning" data-price="1000">
+      <span class="service-name">🧥Leather & Suede Cleaning          <small>₹1000.00</small></span>
+      <button class="toggle-btn">Add Item</button>
+    </div>
+
+    <div class="service-row" data-name="Wedding Dress Cleaning" data-price="2500">
+      <span class="service-name">👰‍♀️Wedding Dress Cleaning          <small>₹2500.00</small></span>
+     <button class="toggle-btn">Add Item</button>
+    </div>
+    <h3>ⓘ Add the items to the cart and book now</h3>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right-box">
+
+    <div class="added-box">
+      <h3>Added Items</h3>
+    
+   <table id="cartTable">
+  <thead>
+    <tr>
+      <th>S.No</th>
+      <th>Service Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+
+  <tbody id="cart-items"></tbody>
+</table>
+
+   <div id="emptyCart">
+  <p class="info-icon">ⓘ</p>
+  <p><strong>No Items Added</strong></p>
+  <p>Add items to the cart from the services bar</p>
+</div>
+
+      <div class="total-big">
+        Total Amount : ₹ <span id="total">0</span>
+      </div>
+    </div>
+
+    <div class="book-box">
+      <h3>Book Now</h3>
+      <input id="name" placeholder="Full Name">
+      <div class="two-inputs">
+        <input id="email" placeholder="Email ID">
+        <input id="phone" placeholder="Phone Number">
+      </div>
+      <button id="bookNow">Book Now</button>
+      <p id="emailStatus" ></p>
+        <p id="thankYouMsg"></p>
+    </div>
+
+  </div>
+</section>
+    <!-- QUALITY DESCRIPTION -->
+<section class="quality">
+
+    <div class="quality-grid">
+
+        <div class="q-item">
+            <div class="q-icon">🧺</div>
+            <h3>Premium Services</h3>
+            <p>
+                Elevate your wardrobe with our
+                meticulous dry cleaning, ensuring
+                garments look and feel as good as new.
+            </p>
+        </div>
+
+        <div class="q-item">
+            <div class="q-icon">🎧</div>
+            <h3>Quick Support</h3>
+            <p>
+                We are committed to providing
+                prompt solutions to ensure your
+                experience is smooth and worry-free.
+            </p>
+        </div>
+
+        <div class="q-item">
+            <div class="q-icon">🚚</div>
+            <h3>Hassle Free Delivery</h3>
+            <p>
+                Enjoy seamless service with our
+                convenient pickup and delivery
+                options tailored to your schedule.
+            </p>
+        </div>
+
+        <div class="q-item">
+            <div class="q-icon">💰</div>
+            <h3>Affordable Prices</h3>
+            <p>
+                Experience exceptional care without
+                breaking the bank – our affordable
+                prices make laundry stress-free.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+   <!-- NEWSLETTER SECTION -->
+<section class="newsletter">
+    <div class="newsletter-box">
+        <div class="newsletter-text">
+            <h2>Subscribe to our<br>newsletter.</h2>
+        </div>
+
+        <div class="newsletter-form">
+            <input type="text" placeholder="Full name">
+            <input type="email" placeholder="Email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Logo</h3>
+            <p>
+                About us<br>
+                Lorem ipsum dolor sit amet<br>
+                consectetur adipiscing elit.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Important Links</h3>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Refund Policy</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>abc@gmail.com</p>
+            <p>+91 87354 75893</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <span>📸</span>
+                <span>📘</span>
+                <span>🐦</span>
+                <span>▶</span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "YOUR_PUBLIC_KEY",
+      });
+   })();
+</script>
+
+<script src="script.js" defer></script>
+</body>
+</html>

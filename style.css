@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #91cef7;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    background-color: white;
+    color: rgb(10, 3, 3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .username-box {
+    background-color: #91cef7;
+    color: #1e90ff;
+    font-weight: 900;
+    display: inline-block;
+    font: size 30px; ;
+    padding: 6px 15px;
+    border-radius: 8px;
+    margin-left: 50px;
+
+}
+
+.navbar .logo{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+
+}
+
+.nav-links a {
+    color: rgba(17, 8, 8, 0.881);
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    padding: 50px;
+    background: white;
+}
+
+.hero h1 {
+    margin-top: 50px;
+}
+
+.hero-left h1 .highlight {
+    color: #210be8;
+    font-weight: 600;
+}
+
+.hero p {
+    margin-top: 20px;
+}
+.hero-left {
+    width: 50%;
+    padding: 30px;
+}
+
+.hero-left button {
+    background-color: #1e90ff;   /* blue colour */
+    color: white;
+    font-size: 18px;             /* size bada */
+    padding: 14px 30px;          /* button size */
+    
+    margin-left: -1px;          /* LEFT shift */
+    margin-top: 25px;           /* down shift*/
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-right img {
+    width: 700px;
+    height: 10cm;
+    margin-top: 50px;
+    margin-right: 10ch;
+}
+
+
+/*Service OVERVIEW */
+
+
+
+.overview {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background: #5395d6
+}
+
+.overview-box {
+    text-align: center;
+}
+
+/* ===== SERVICE ROW DESIGN (RED DOT STYLE) ===== */
+.page-2 {
+  display: flex;
+  gap: 30px;
+  margin-left: 130px;
+  padding: 50px;
+  background: rgb(248, 245, 245)
+
+}
+.page-2 h3{
+  font-size:small;
+  color: #3295e6;
+}
+body{
+  background: rgb(248, 245, 245);
+}
+.service-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
+.service-name small {
+  color: #2f5bff;
+  font-weight: 600;
+  margin-left: 6px;
+}
+/* LEFT */
+.toggle-btn {
+  padding: 8px 18px;
+  background: #e6f0ff;
+  color: #2667c3;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: #ffe5e5;
+  color: #e63946;
+}
+.left-box {
+  width: 38%;
+  margin-left: 40px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.small-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.qty-btns button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  background: #e6f0ff;
+  color: #0e1319;
+}
+
+.remove-btn {
+  background: #ffe5e5;
+  color: red;
+}
+
+.bottom-text {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* RIGHT */
+.added-box h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  padding-left: 40%;
+}
+.added-box thead {
+  background: #f3f6ff;
+}
+
+.added-box th {
+  color: #090e1f;
+  font-weight: 600;
+}
+.total-big {
+  margin-top: 15px;
+  padding: 12px;
+  background: #eef4ff;
+  color: #090e1f;
+  border-radius: 8px;
+  font-size: 22px;
+}
+
+.right-box {
+  width: 45%;
+}
+.right-box h3{
+  color: #151720;
+}
+
+.added-box, .book-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+.added-box table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.added-box th, td {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.total-big {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #151720;
+}
+
+.two-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.book-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.book-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #2f5bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+#emailStatus {
+  margin-top: 10px;
+  color: green;
+  font-size: 14px;
+}
+#emptyCart {
+  display: none;
+  text-align: center;
+  color: #666;
+}
+
+.info-icon {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+/* QUALITY */
+.quality {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.quality h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.quality-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.q-item {
+    padding: 20px;
+}
+
+.q-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #1e88e5;
+}
+
+.q-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.q-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    background: linear-gradient(90deg, #1e88e5, #42a5f5);
+    padding: 50px 0;
+}
+
+.newsletter-box {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.newsletter-text h2 {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 12px 25px;
+    background: white;
+    color: #1e88e5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    background: #d3cece;
+    padding: 50px 0;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+}
+
+.footer-col a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-col p {
+    color: #666;
+    font-size: 14px;
+}
+
+.social-icons span {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+
+
+}
